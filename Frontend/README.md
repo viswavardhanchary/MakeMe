@@ -47,29 +47,35 @@ MakeMe is an **advanced AI-powered to-do list web application** that helps users
 
 > Make sure you have **Node.js** and **npm** installed.
 
-```bash
+
 # 1. Clone the repository
+```bash
 git clone https://github.com/viswavardhanchary/MakeMe.git
+```
 
 # 2. Navigate to the project folder
-cd MakeMe 
+```bash
+cd MakeMe
+``` 
 Then
 #(for Frontend) 2.i 
+```bash
 cd Frontend
 npm install
 npm run dev
+```
 #(for Backend)2.ii
+```bash
 cd Backedn
 npm install
 node --watch server.js
+```
 #(Make sure that both Frontend and Backend is running)
 
 # 3. Set up Gemini API Key
-#Visit [Google AI Studio](https://aistudio.google.com/app/apikey) and generate your API key.
+**Visit [Google AI Studio](https://aistudio.google.com/app/apikey) and generate your API key.**
 #    Add it in a `.env` file as:
 #    API_KEY=your_api_key_here
-
----
 ```
 ## 👤 Author
 
