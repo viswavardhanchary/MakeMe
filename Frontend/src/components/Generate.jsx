@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import '../styles/Generate.css';
-import '../styles/layout.css'
+import '../styles/Layout.css'
 import { useEffect, useState } from "react";
 import { getData } from '../apis/aiData';
 import { Bounce, toast } from "react-toastify";
