@@ -1,0 +1,45 @@
+
+.no-data-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}
+
+.no-data-box {
+  padding: 30px 40px;
+  border-radius: 14px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in-out;
+  max-width: 400px;
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+}
+
+.no-data-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #4fc3f7; 
+}
+
+
+.no-data-message {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.no-data-subtext {
+  font-size: 14px;
+  color: #a1a1a1;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

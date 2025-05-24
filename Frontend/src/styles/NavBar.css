@@ -1,0 +1,78 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.left,
+.right {
+  display : flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right {
+  width: 40%;
+}
+.left,
+.home,
+.tasks,
+.about,
+.help {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left {
+  color: red;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.nav-bar {
+  background: rgb(0, 0, 0); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .right {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    gap : 15px;
+    justify-content: center;
+  }
+  .home,
+  .tasks,
+  .about,
+  .help {
+    padding: 1px 2px;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 315px) {
+  .home,
+  .tasks,
+  .about,
+  .help {
+    font-size: .8rem;
+    padding: 1px 2px;
+  }
+}
