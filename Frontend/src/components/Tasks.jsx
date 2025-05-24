@@ -229,7 +229,7 @@ export default function Task() {
     const newData2 = [
       ...data,
       {
-        id: data[data.length - 1].id + 1,
+        id: data.length == 0 ? 0 : data[data.length - 1].id + 1,
         deadline: curData.deadline,
         task: curData.task,
         notes: curData.notes,
@@ -257,6 +257,7 @@ export default function Task() {
       theme: "dark",
       transition: Bounce,
     });
+    setIsNoData(false);
     setData(updatedNewData);
     localStorage.setItem('data', JSON.stringify(updatedNewData));
   }
@@ -308,7 +309,7 @@ export default function Task() {
             <div className='links'>Links</div>
             <div className='actions'>Actions</div>
           </div>
-          <div className="clear-me-me" style={{ display: 'flex', alignItems: 'center', justifyContent: 'end', marginTop: "15px" }}>
+          <div className="clear-me-me" style={{ display: 'flex', alignItems: 'center', justifyContent: 'end', marginTop: "15px" , marginBottom: "10px"}}>
             <button className="btn btn-danger" onClick={() => {
               setData([]);
               localStorage.setItem('data', JSON.stringify([]));
