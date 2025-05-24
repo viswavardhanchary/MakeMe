@@ -10,10 +10,11 @@ const router = require('./routers/data-ai');
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://makeme-v60n.onrender.com/'
+  origin: 'https://makeme-v60n.onrender.com'
 }));
 
 app.use("/data-ai" , router);
+
 
 const uploadDir = './uploads';
 
