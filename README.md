@@ -24,10 +24,19 @@ MakeMe is an **advanced AI-powered to-do list web application** that helps users
 - JavaScript
 - Bootstrap
 - React
+- **Frontend Libraries**
+    -react-toastify (for giving alerts)
+    -react-router-dom (for routers)
+    -react-textarea-autosize  (for custom text area)
 
 ### Backend
 - Node.js
 - Express
+- **Backend Libraries**
+    -multer (files reading)
+    -cors (for the origin control)
+    -fs (for the reading and writing the files)
+    -path (for file's path)
 
 ### AI Integration
 - Google Gemini API (Gemini 1.5 Flash)
