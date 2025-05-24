@@ -74,15 +74,13 @@ node --watch server.js
 
 # 3. Set up Gemini API Key
 **Visit [Google AI Studio](https://aistudio.google.com/app/apikey) and generate your API key.**
-#    Add it in a `.env` file as:
-#    API_KEY=your_api_key_here
-```
+ Add it in a `.env` file as:
+ API_KEY=your_api_key_here
+
 ## 👤 Author
 
-**Eneti Viswa Vardhan Chary**
+**Enjeti Viswa Vardhan Chary**
 🔗 [GitHub Profile](https://github.com/viswavardhanchary)
-
----
 
 ## 📄 License
 
