@@ -32,7 +32,6 @@ export default function Home() {
         const res = await sendData(formedFile);
         const acData = res.data;
         const oldData = JSON.parse(localStorage.getItem('data'));
-        console.log(oldData)
         let startingIndex = (oldData && oldData.length >= 1) ? oldData[oldData.length - 1].id : -1;
         let newData;
         if (oldData == null) {
