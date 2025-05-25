@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { getData } from '../apis/aiData';
 import { Bounce, toast } from "react-toastify";
 import NoDataAvai from "./NoDataAvai";
+import WarningBanner from './WarningBanner'
 export default function Generate() {
   const [aiText, setAiText] = useState('');
   const [aiData, setAiData] = useState([]);
@@ -109,6 +110,7 @@ export default function Generate() {
 
   return (
     <>
+      <WarningBanner/>
       <div className="generate">
         <div className="top-layers">
           <Link to="/" className="btn btn-info x25" style={{ width: "max-content" }}>Go Back</Link>
