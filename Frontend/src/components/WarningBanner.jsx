@@ -9,6 +9,7 @@ const WarningBanner = () => {
           This app is running on a <strong>free Render plan</strong>. Response times may be delayed by a few seconds.
           <br />
           <em>Thanks for your patience!</em>
+          If Response it to delay try to reload the page.
         </div>
       </div>
     </div>
